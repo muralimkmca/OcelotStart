@@ -1,0 +1,30 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/books/listbooks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5110
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/mybookinfo/list"
+    },
+    {
+      "DownstreamPathTemplate": "/books/listbooks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5110
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/muralibookinfo/list"
+    }
+  ],
+  "GlobalConfiguration": {    
+  }
+}
